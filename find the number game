@@ -1,0 +1,21 @@
+from random import randint
+
+a = randint(1,6)
+
+for i in range(1,4):
+    user_int = int(input('Bot 1 dan 6 gacha son uyladi\n'
+                         'Ushani toping:'))
+    if user_int == a:
+        print('Winner')
+        break
+    elif i == 3:
+        print('siz yutqazdingiz!3/3')
+    else:
+        if user_int > a:
+            print(f'Bot kichikroq son uyladi | {i}/3')
+        elif a > user_int:
+            print(f'Bot kattaroq son uyladi! {i}/3')
+        else:
+            print(f'{i}/3')
+else:
+    print('Manfiy qabul qilinmaydi!')
